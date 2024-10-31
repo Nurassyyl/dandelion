@@ -1,0 +1,283 @@
+.product-pages {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.wpcourses-breadcrumbs {
+  margin-top: 40px;
+}
+
+
+.wpcourses-breadcrumbs a {
+  color: #555A65;
+}
+
+.wpcourses-breadcrumbs a:hover {
+  color: #946CAC;
+}
+
+.wpcourses-breadcrumbs a,
+span {
+  font-size: 14px;
+}
+
+.wpcourses-breadcrumbs span {
+  color: #946CAC;
+}
+
+.product-pages_img {
+  width: 590px;
+  max-width: 100%;
+}
+
+.product-pages-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 250px;
+}
+
+.produc__short-desc {
+  line-height: 1.6;
+}
+
+.product-pages-tabs-bg {
+  background-color: rgba(136, 136, 136, 0.05);
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.tabNav-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.tabNav_link {
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.tabNav_link.active {
+  border-bottom: 2px solid #946CAC;
+  padding-bottom: 5px;
+}
+
+.tabNav_link:hover {
+  color: #946CAC;
+}
+
+.tabItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.tabReviews {
+  margin-top: 50px;
+}
+
+.tab-content.hidden {
+  display: none;
+}
+
+.tabItem_title {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.tabItem_desc {
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+.tabItem_text {
+  margin: 10px 0;
+}
+
+.tabItem-accordion {
+  max-width: 400px;
+}
+
+.tabItem-accordion-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.tabItem-accordion-head_title {
+  font-size: 16px;
+}
+
+.btn-plus {
+  margin-right: 1rem;
+  position: relative;
+}
+
+.btn-plus_line {
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(90deg);
+  transition: all .3s ease;
+}
+
+.btn-plus::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  transition: all .3s ease;
+}
+
+.tabItem-accordion-head:hover .btn-plus_line,
+.tabItem-accordion-head:hover .btn-plus::before {
+  background-color: #946CAC;
+}
+
+.tabItem-accordion_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .3s ease;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.tabItem-accordion_content ul li {
+  line-height: 1.6;
+}
+
+.products-efficiencies {
+  background-color: #FFFFFF;
+  padding: 50px 0;
+}
+
+.product-efficiencies {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-efficiencies_title {
+  font-size: 45px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.product-efficiencies_descs {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.product-efficiencies_desc {
+  margin: 10px 0;
+}
+
+.recommended {
+  background-color: rgba(136, 136, 136, 0.05);
+  padding: 50px 0;
+}
+
+.recommended_title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.recommended-products {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.recommended-product_img {
+  width: 285px;
+  max-width: 100%;
+  height: 285px;
+}
+
+@media screen and (max-width: 992px) {
+  .product-pages {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabItems {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-efficiencies_title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .btn._icon::after {
+    width: 15px;
+    height: 15px;
+  }
+
+  .product-pages__btn {
+    font-size: 15px;
+  }
+
+  .recommended-products {
+    justify-content: center;
+  }
+
+  .recommended-product_img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-pages-text {
+    gap: 5px;
+  }
+
+  .product-pages_title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .produc__short-desc {
+    margin: 10px 0;
+  }
+
+  .product__btn {
+    max-width: 100%;
+  }
+
+  .product-efficiencies {
+    gap: 5px;
+    text-align: left;
+  }
+
+  .product-efficiencies_descs {
+    line-height: 1.4;
+  }
+
+  .product-efficiencies_desc {
+    margin: 0;
+  }
+}
